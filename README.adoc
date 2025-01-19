@@ -1,1 +1,85 @@
-= template-image-builder
+= Template Image Builder
+
+[discrete]
+==== Objetivo
+
+Este repositório serve como um template para build e push de imagens Docker. Ele utiliza um workflow do GitHub Actions que cria uma release e uma tag do projeto, e em seguida, realiza o build e o push da imagem com base na tag criada.
+
+==== Fluxo de Versionamento
+
+O projeto segue as regras de versionamento do [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). O workflow `release-please.yaml` gerencia automaticamente as releases e tags.
+
+==== Estrutura do Projeto
+content_copy
+download
+Use code with caution.
+Adoc
+
+.
+├── CHANGELOG.md // Registro de mudanças do projeto
+├── CODEOWNERS // Define responsáveis pelo código
+├── commitlint.config.js // Configurações do commitlint
+├── Dockerfile // Arquivo de definição da imagem Docker
+├── .dockerignore // Arquivos a serem ignorados durante o build da imagem
+├── .github // Configurações específicas do GitHub
+│ ├── pull_request_template.md // Template para pull requests
+│ ├── release-please-config.json // Configurações do release-please
+│ ├── .release-please-manifest.json // Manifesto do release-please
+│ └── workflows // Workflows do GitHub Actions
+│ ├── builder-docker-image-dockerhub.yml // Workflow para Docker Hub
+│ ├── builder-docker-image-github.yaml // Workflow para GitHub Container Registry
+│ └── release-please.yaml // Workflow para gerenciar releases
+├── .gitignore // Arquivos a serem ignorados pelo Git
+├── LICENSE // Licença do projeto
+├── package.json // Arquivo de manifesto do projeto (para projetos Node.js)
+├── .pre-commit-config.yaml // Configurações do pre-commit
+├── README.adoc // Este arquivo
+├── requirements.txt // Dependências Python do projeto
+└── version.txt // Versão atual do projeto
+
+==== Como Usar
+
+1. Faça um fork deste repositório.
+2. Clone o repositório forkado para sua máquina local.
+3. Adapte o `Dockerfile` para as necessidades do seu projeto.
+4. Configure os workflows `builder-docker-image-dockerhub.yml` ou `builder-docker-image-github.yaml` com as suas credenciais e nome da imagem.  Você precisará configurar secrets no seu repositório GitHub para armazenar informações sensíveis como credenciais de acesso.
+5. Crie commits e pull requests seguindo o fluxo do GitFlow. O workflow `release-please.yaml` irá criar automaticamente releases e tags para o seu projeto.
+6. O workflow de build da imagem será executado automaticamente após a criação de uma release.
+
+==== Workflows do GitHub Actions
+
+* `release-please.yaml`:  Este workflow é responsável por gerenciar as releases do projeto. Ele utiliza o GitHub Action `google-github-actions/release-please-action` para automatizar a criação de releases e tags com base nos commits.
+
+* `builder-docker-image-dockerhub.yml`: Este workflow realiza o build e o push da imagem Docker para o Docker Hub. Ele é disparado pela criação de uma nova tag.
+
+* `builder-docker-image-github.yaml`: Este workflow realiza o build e o push da imagem Docker para o GitHub Container Registry. Ele também é disparado pela criação de uma nova tag.
+
+
+==== Pré-requisitos
+
+* Conta no GitHub.
+* Conta no Docker Hub (se for usar o workflow `builder-docker-image-dockerhub.yml`).
+* Conhecimento básico de Docker e GitHub Actions.
+
+==== Contribuição
+
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+
+1. Faça um fork do projeto.
+2. Crie uma branch para a sua feature: `git checkout -b feature/minha-feature`.
+3. Faça as suas alterações.
+4. Commit as suas alterações: `git commit -m 'Adicionando minha feature'`.
+5. Push a branch: `git push origin feature/minha-feature`.
+6. Abra um pull request.
+
+
+==== Licença
+
+Distribuído sob a licença [Apache License 2.0](LICENSE).
+
+==== Contato
+
+Em caso de dúvidas ou sugestões, entre em contato através de um issue neste repositório.
+content_copy
+download
+Use code with caution.
