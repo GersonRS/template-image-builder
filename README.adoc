@@ -127,10 +127,28 @@ Após revisar e publicar o release draft, os workflows `builder-docker-image-doc
 [[_contributing]]
 == Contributing
 
-Contribuições são bem-vindas!  Por favor, abra uma issue ou pull request.
+Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**! Por favor, abra uma issue ou pull request..
+
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/FeatureIncrivel`)
+3. Adicione suas mudanças (`git add .`)
+4. Comite suas mudanças (`git commit -m 'Adicionando uma Feature incrível!`)
+5. Faça o Push da Branch (`git push origin feature/FeatureIncrivel`)
+6. Abra um Pull Request
 
 
 [[_license]]
 == License
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+[[_support]]
+== Suporte
+
+Entre em contato com o mantenedor do projeto em um dos seguintes lugares:
+
+* Linkedin: https://www.linkedin.com/in/gersonrsantos/
+* Instagram: https://www.instagram.com/gersonrsantos/
+* Twitter: https://twitter.com/gersonrs3
+* Telegram: https://t.me/gersonrsantos
+* Email: gersonrodriguessantos8@gmail.com
