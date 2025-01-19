@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/GersonRS/template-image-builder/compare/v1.1.0...v1.2.0) (2025-01-19)
+
+
+### 🚀 New Features
+
+* include folder docs ([74b0bc8](https://github.com/GersonRS/template-image-builder/commit/74b0bc8b296cdde28884a14fabbe155060eaeee8))
+* update workflow ([39f19f3](https://github.com/GersonRS/template-image-builder/commit/39f19f3a3d9ad0074c400c4525ed7b775122f2f9))
+
 ## [1.1.0](https://github.com/GersonRS/template-image-builder/compare/v1.0.0...v1.1.0) (2025-01-19)
 
 
