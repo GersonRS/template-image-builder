@@ -1,4 +1,4 @@
-= template-image-builder: Um template para build e push de imagens Docker
+= Um template para build e push de imagens Docker
 
 [[_overview]]
 == Overview
@@ -69,6 +69,8 @@ pre-commit install
 O workflow `release-please` monitora os commits no seu repositório.  Quando detecta commits suficientes para uma nova versão (seguindo o Conventional Commits), ele cria automaticamente um release draft.
 
 Após revisar e publicar o release draft, os workflows `builder-docker-image-dockerhub.yml` ou `builder-docker-image-github.yaml` serão acionados.  Eles irão construir a imagem Docker usando o `Dockerfile` e enviar a imagem tagueada para o registro de imagens escolhido (Docker Hub ou GitHub Container Registry).
+
+**Importante:** O nome da imagem Docker construída será derivado do nome do repositório. Por exemplo, se o seu repositório se chama `meu-projeto-incrível`, a imagem Docker será nomeada como `meu-projeto-incrível`.  Isso é definido no workflow de build (e.g., `builder-docker-image-dockerhub.yml`) através da variável `${{ steps.repo-basename.outputs.value }}`.  Se você precisar de um nome de imagem diferente, modifique a linha `images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-basename.outputs.value }}` no workflow correspondente.
 
 [[_file_structure]]
 == File Structure
