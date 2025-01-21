@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/GersonRS/template-image-builder/compare/v1.2.0...v1.3.0) (2025-01-21)
+
+
+### 🚀 New Features
+
+* adjust build workflow ([90f8e10](https://github.com/GersonRS/template-image-builder/commit/90f8e10aff29f47a7ce66a771b7c21f677c29a6c))
+
 ## [1.2.0](https://github.com/GersonRS/template-image-builder/compare/v1.1.0...v1.2.0) (2025-01-19)
 
 
