@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1](https://github.com/GersonRS/template-image-builder/compare/v1.3.0...v1.3.1) (2025-02-08)
+
+
+### ⌨️ Code Refactoring
+
+* adjust workflows ([58d1a8a](https://github.com/GersonRS/template-image-builder/commit/58d1a8a35979edc3eca8dba1e4506d39c3091528))
+* try adjust code 5 ([63d3be4](https://github.com/GersonRS/template-image-builder/commit/63d3be42ab340ad232fba01d7cdcbbbcb4a99a69))
+
 ## [1.3.0](https://github.com/GersonRS/template-image-builder/compare/v1.2.0...v1.3.0) (2025-01-21)
 
 
