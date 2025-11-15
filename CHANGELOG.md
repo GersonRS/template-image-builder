@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/GersonRS/template-image-builder/compare/v1.3.1...v1.4.0) (2025-11-15)
+
+
+### 🚀 New Features
+
+* add PR validation to Docker build workflows ([919df9e](https://github.com/GersonRS/template-image-builder/commit/919df9e23b88bc1ab1fbe1c490059b0401e65a32))
+
 ## [1.3.1](https://github.com/GersonRS/template-image-builder/compare/v1.3.0...v1.3.1) (2025-02-08)
 
 
